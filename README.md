@@ -1,5 +1,5 @@
 # 3D-FRONT-Toolbox
-This python based toolbox is used to co
+This python based toolbox is used to generate camera setting and scene OBJ.
 ### Algorithm Description
    + ***Input***: scene json 
       + scene json file, *.json

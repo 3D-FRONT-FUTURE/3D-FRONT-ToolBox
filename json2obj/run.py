@@ -5,6 +5,7 @@ import math
 import os,argparse
 import math
 import igl
+from shutil import copyfile
 
 def split_path(paths):
     filepath,tempfilename = os.path.split(paths)
@@ -68,6 +69,8 @@ args = parser.parse_args()
 
 files = os.listdir(args.json_path)
 
+if not os.path.exists(args.save_path):
+    os.mkdir(args.save_path)
 
 for m in files:
     with open(args.json_path+'/'+m, 'r', encoding='utf-8') as f:

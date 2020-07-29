@@ -106,11 +106,12 @@ for m in files:
             for c in children:
                 
                 ref = c['ref']
-                type = 'f'
+                type = None
                 try:
                     idx = model_uid.index(ref)
                     if os.path.exists(args.future_path+'/' + model_jid[idx]):
                         v, vt, _, faces, ftc, _ = igl.read_obj(args.future_path+'/' + model_jid[idx] + '/raw_model.obj')
+                        type = 'f'
                         # bbox = np.max(v, axis=0) - np.min(v, axis=0)
                         # s = bbox / model_bbox[idx]
                         # v = v / s

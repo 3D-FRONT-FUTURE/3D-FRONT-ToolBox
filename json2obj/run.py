@@ -141,7 +141,7 @@ for m in files:
                 if type == 'f':
                     write_obj_with_tex(args.save_path+'/' + m[:-5]+'/'+room_id+'/' + str(number) + '_' +model_jid[idx] + '.obj', v, faces, vt, ftc, args.future_path+'/' + model_jid[idx] + '/texture.png')
                     number = number + 1
-                else:
+                elif type == 'm':
                     meshes.append(trimesh.Trimesh(v, faces))
 
             if len(meshes) > 0:

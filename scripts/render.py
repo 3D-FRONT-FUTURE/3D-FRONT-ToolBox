@@ -218,6 +218,5 @@ for scene in scene_list:
                 continue
             mesh_list.append(os.path.join(args.scene_path, scene, room, obj_name))
             tex_list.append(os.path.join(args.scene_path, scene, room, obj_name.replace('obj','png')))
-    print(cam_info)
     render_function(mesh_list,tex_list,cam_info, os.path.join(args.scene_path, scene))
 

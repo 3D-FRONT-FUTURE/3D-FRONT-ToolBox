@@ -48,9 +48,7 @@ The render.py script is used to render depth and normal images for given camera 
 
 ### examples
 
-<img src="imgs/normal1.png" width = "300" height = "300" align=center />
-<img src="imgs/depth1.png" width = "300" height = "300" align=center />
+<img src="imgs/normal1.png" width = "300" height = "300" align=center /><img src="imgs/depth1.png" width = "300" height = "300" align=center />
 
-<img src="imgs/normal2.png" width = "300" height = "300" align=center />
-<img src="imgs/depth2.png" width = "300" height = "300" align=center />
+<img src="imgs/normal2.png" width = "300" height = "300" align=center /><img src="imgs/depth2.png" width = "300" height = "300" align=center />
 

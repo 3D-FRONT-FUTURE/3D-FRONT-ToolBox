@@ -4,7 +4,7 @@ We use the method of Wang et al.[1] [deep_synth](https://github.com/brownvc/deep
 
 ## Data Preparation
 
-To meet the data format [1] used, we provide the prepared data in the dir /data/3d_front. First download the [object.7z]() and then unzip the .7z files (object.7z, house.7z and room.7z) in the same name dir (in /data/3d_front).
+To meet the data format [1] used, we provide the prepared data in the dir /data/3d_front. First download the [object.7z](https://drive.google.com/file/d/15A88BEQisFNxsGh2tgWzTt9nYtpKjgJk/view?usp=sharing) and then unzip the .7z files (object.7z, house.7z and room.7z) in the same name dir (in /data/3d_front).
 
 Then run 
 ```

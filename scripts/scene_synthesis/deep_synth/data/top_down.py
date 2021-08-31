@@ -94,9 +94,11 @@ class TopDownView():
             # print(rendered.shape)
 
             description["height_map"] = torch.from_numpy(rendered).float()
+
+            tmp = self.render_object(o, 0, 0, self.size, self.size, self.size)
             
-            tmp = np.zeros((self.size, self.size))
-            tmp[min(xmin,xmin+xsize):min(xmin,xmin+xsize)+rendered.shape[0],min(ymin,ymin+ysize):min(ymin,ymin+ysize)+rendered.shape[1]] = rendered
+            # tmp = np.zeros((self.size, self.size))
+            # tmp[min(xmin,xmin+xsize):min(xmin,xmin+xsize)+rendered.shape[0],min(ymin,ymin+ysize):min(ymin,ymin+ysize)+rendered.shape[1]] = rendered
             visualization += tmp
 
             nodes.append(description)

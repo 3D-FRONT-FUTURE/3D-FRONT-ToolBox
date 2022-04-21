@@ -1,5 +1,6 @@
 # 3D-FRONT-Toolbox
-This python based toolbox is used to generate camera setting and scene OBJ.
+### 2022.4.21
+* rewrite json2obj.py to process the updated 3D-FRONT (partial open sourceinterior finish with texture) and add new features.
 ### Algorithm Description
    + ***Input***: scene json 
       + scene json file, *.json

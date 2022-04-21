@@ -157,10 +157,10 @@ def read_obj(filepath):
 
 
 def save_mesh(savepath, filename, *args):
-    fid = open(savepath+'/'+filename+'.obj', "w")
+    fid = open(savepath+'/'+str(filename)+'.obj', "w")
 
-    mtl_fid = open(savepath+'/'+filename+'.mtl', "w")
-    fid.write('mtllib '+filename+'.mtl\n')
+    mtl_fid = open(savepath+'/'+str(filename)+'.mtl', "w")
+    fid.write('mtllib '+str(filename)+'.mtl\n')
     v_id = 1
     vt_id = 1
     for mesh in args:
@@ -173,12 +173,12 @@ def save_mesh(savepath, filename, *args):
                 fid.write('vt %f %f\n' % (vti[0], vti[1]))
             
         
-        mtl_fid.write('newmtl '+mesh_id+'\n')
+        mtl_fid.write('newmtl '+str(mesh_id)+'\n')
         if type(texture) == list:
             mtl_fid.write('Kd '+str(texture[0]/255.)+' '+str(texture[1]/255.)+' '+str(texture[2]/255.)+'\n')
         else:
             mtl_fid.write('map_Kd '+texture+'\n')
-        fid.write('usemtl '+mesh_id+'\n')
+        fid.write('usemtl '+str(mesh_id)+'\n')
         for f in faces:
             if type(texture) == list:
                 fid.write('f %d %d %d\n' % (f[0]+v_id,f[1]+v_id,f[2]+v_id))

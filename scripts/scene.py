@@ -125,9 +125,11 @@ class Room():
                                 pass
 
                         texture = Config.TEXTURE_PATH+'/' + mat.jid + '/texture.png'
-
-                output.append([mesh.instanceid, v - self.center,faces,vt,texture])
-                all_output.append([mesh.instanceid, v - self.center,faces,vt,texture])
+                try:
+                    output.append([mesh.instanceid, v - self.center,faces,vt,texture])
+                    all_output.append([mesh.instanceid, v - self.center,faces,vt,texture])
+                except:
+                    pass
             if len(output) == 0:
                 continue
             if not os.path.exists(savepath+'/'+mesh.type):

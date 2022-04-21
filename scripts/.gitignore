@@ -1,4 +1,5 @@
+[core]
+excludesfile=.gitignore
 .history
 .vscode
 test*
-.gitignore

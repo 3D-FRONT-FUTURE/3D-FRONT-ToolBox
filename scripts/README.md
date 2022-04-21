@@ -1,7 +1,7 @@
 
 
 ### 2022.4.21 
-* **rewrite json2obj.py to process the updated 3D-FRONT (partial open sourceinterior finish with texture) and add new features.**
+* **rewrite json2obj.py to process the updated 3D-FRONT (partial open source interior finish with texture) and add new features.**
 
 These scripts provide methods including generating scene objects from json files, point clouds of scenes, depth image and normal image of arbitrary view.
 

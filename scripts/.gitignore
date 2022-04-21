@@ -1,3 +1,4 @@
 .history
 .vscode
 test*
+.gitignore

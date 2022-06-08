@@ -71,9 +71,9 @@ scene.output('./output')
 scene.output('./output', select_room_type = ['LivingRoom'], select_mesh_type=['wall','floor','others'], select_furniture_type = ['Table'])
 
 # output room 'MasterBedroom-46277' only with Bed models, and center room to origin.
-scene.output_with_room_id('./output', room_id='MasterBedroom-46277', center = Ture, select_furniture_type = ['Bed'])
+scene.output_with_room_id('./output', room_id='MasterBedroom-46277', center = True, select_furniture_type = ['Bed'])
 
-### mesh type: ['wall', 'ceil', 'floor', 'other']
+### mesh type: ['wall', 'ceil', 'floor', 'others']
 ### furniture type: all categories in 'categories.py' in 3D-FUTURE-model
 ### room type: Figure 5 in 3D-FRONT paper.
 ```
